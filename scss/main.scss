@@ -1,0 +1,260 @@
+@import "./mixins", "./variables";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: $white;
+  &:hover {
+    color: $blue;
+  }
+}
+nav {
+  background-color: $black;
+  width: 100vw;
+  height: 8.1vh;
+  display: flex;
+  top: 0;
+  left: 0;
+  position: fixed;
+  font-size: 2.02vw;
+  padding: 0 2.02vh;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+
+  & ul {
+    color: $white;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  & li {
+    display: inline-block;
+    color: $white;
+    margin: 0 1.01vw;
+    text-decoration: none;
+  }
+
+  & #profile-link {
+    justify-self: start;
+  }
+}
+.portfolio-section {
+  height: 100vh;
+  margin: 0;
+
+  & h1 {
+    font-size: 16.7vh;
+
+    @include mobile {
+      font-size: 16.7vw;
+    }
+  }
+}
+#welcome-section {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  & #welcome-header {
+    margin-bottom: 0;
+    margin: 0;
+    position: absolute;
+    font-size: 11.94vw;
+    bottom: 41.48vh;
+
+    @include mobile {
+      font-size: 11.94vw;
+      bottom: 41.48vh;
+    }
+  }
+  & #welcome-subheader {
+    margin: 0;
+    position: absolute;
+    font-size: 7.79vw;
+    font-style: italic;
+    top: 57.49%;
+
+    @include mobile {
+      font-size: 7.79vw;
+      bottom: 57.49vh;
+    }
+  }
+  & #landing-rect {
+    background-color: $blue;
+    z-index: -1;
+    position: absolute;
+    bottom: 30.19vh;
+    width: 73.54vw;
+    height: 14.98vw;
+
+    @include mobile {
+      top: 50.19vh;
+      height: 24.98vw;
+    }
+  }
+}
+#about-me {
+  position: relative;
+
+  & #about-me-header {
+    position: absolute;
+    left: 5.42%;
+    top: 4.15%;
+    margin: 0;
+
+    @include mobile {
+      top: 9%;
+    }
+  }
+  & #about-me-subheader {
+    position: absolute;
+    margin: 0;
+    top: 35.63%;
+    left: 6.56%;
+    font-size: 4.96vh;
+    font-weight: 800;
+
+    @include mobile {
+      font-size: 4.96vw;
+    }
+  }
+  & .fa-9x {
+    position: absolute;
+    left: 55.83%;
+    bottom: -0.35vw;
+    font-size: 39.35vw;
+
+    @include mobile {
+      font-size: 20.65vw;
+      top: 77.35vh;
+      left: 75.83vw;
+    }
+  }
+  & #about-rect {
+    position: absolute;
+    background-color: $blue;
+    z-index: -1;
+    top: 17.11%;
+    left: 3.33%;
+    width: 93.33%;
+    height: 74%;
+  }
+  & .fa-instagram {
+    font-size: 3.24vh;
+    color: $white;
+  }
+  & #instagram {
+    margin: 0;
+    color: $white;
+    font-size: 6.22vw;
+
+    @include mobile {
+      font-size: 10.22vw;
+    }
+  }
+  & #instagram-rect {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: $black;
+    width: 32.92%;
+    height: 16.42vw;
+    left: 8.91%;
+    bottom: 4.85%;
+
+    &:hover {
+      animation: wiggle 160ms;
+      animation-timing-function: ease-in;
+    }
+
+    @include mobile {
+      width: 56.4vw;
+      height: 10.42vh;
+    }
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(2px, 0);
+  }
+  50% {
+    transform: translate(-4px, 0);
+  }
+  100% {
+    transform: translate(2px, 0);
+  }
+}
+
+#projects {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  #projects-header {
+    margin: 0;
+    position: absolute;
+    top: 4.05%;
+    left: 4.74%;
+
+    @include mobile {
+      top: 9.05vh;
+    }
+  }
+
+  #projects-rect {
+    position: absolute;
+    top: 17%;
+    left: 2.45%;
+    width: 93.33%;
+    height: 74%;
+    z-index: -1;
+    background-color: $blue;
+
+  }
+
+  #projects-div {
+    width: 79.01%;
+    height: 38.94%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .project-tile {
+    display: inline-block;
+    margin: 1.04%;
+    width: 18.7vw;
+    height: 36.44vh;
+
+  }
+
+  #project-box1 {
+    background-image: url(https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #project-box2 {
+    background-image: url(https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #project-box3 {
+    background-image: url(https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}

@@ -1,0 +1,336 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #6dc5f8;
+}
+
+nav {
+  background-color: #000000;
+  width: 100vw;
+  height: 8.1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  position: fixed;
+  font-size: 2.02vw;
+  padding: 0 2.02vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+nav ul {
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline-block;
+  color: #ffffff;
+  margin: 0 1.01vw;
+  text-decoration: none;
+}
+
+nav #profile-link {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.portfolio-section {
+  height: 100vh;
+  margin: 0;
+}
+
+.portfolio-section h1 {
+  font-size: 16.7vh;
+}
+
+@media (max-width: 800px) {
+  .portfolio-section h1 {
+    font-size: 16.7vw;
+  }
+}
+
+#welcome-section {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#welcome-section #welcome-header {
+  margin-bottom: 0;
+  margin: 0;
+  position: absolute;
+  font-size: 11.94vw;
+  bottom: 41.48vh;
+}
+
+@media (max-width: 800px) {
+  #welcome-section #welcome-header {
+    font-size: 11.94vw;
+    bottom: 41.48vh;
+  }
+}
+
+#welcome-section #welcome-subheader {
+  margin: 0;
+  position: absolute;
+  font-size: 7.79vw;
+  font-style: italic;
+  top: 57.49%;
+}
+
+@media (max-width: 800px) {
+  #welcome-section #welcome-subheader {
+    font-size: 7.79vw;
+    bottom: 57.49vh;
+  }
+}
+
+#welcome-section #landing-rect {
+  background-color: #6dc5f8;
+  z-index: -1;
+  position: absolute;
+  bottom: 30.19vh;
+  width: 73.54vw;
+  height: 14.98vw;
+}
+
+@media (max-width: 800px) {
+  #welcome-section #landing-rect {
+    top: 50.19vh;
+    height: 24.98vw;
+  }
+}
+
+#about-me {
+  position: relative;
+}
+
+#about-me #about-me-header {
+  position: absolute;
+  left: 5.42%;
+  top: 4.15%;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  #about-me #about-me-header {
+    top: 9%;
+  }
+}
+
+#about-me #about-me-subheader {
+  position: absolute;
+  margin: 0;
+  top: 35.63%;
+  left: 6.56%;
+  font-size: 4.96vh;
+  font-weight: 800;
+}
+
+@media (max-width: 800px) {
+  #about-me #about-me-subheader {
+    font-size: 4.96vw;
+  }
+}
+
+#about-me .fa-9x {
+  position: absolute;
+  left: 55.83%;
+  bottom: -0.35vw;
+  font-size: 39.35vw;
+}
+
+@media (max-width: 800px) {
+  #about-me .fa-9x {
+    font-size: 20.65vw;
+    top: 77.35vh;
+    left: 75.83vw;
+  }
+}
+
+#about-me #about-rect {
+  position: absolute;
+  background-color: #6dc5f8;
+  z-index: -1;
+  top: 17.11%;
+  left: 3.33%;
+  width: 93.33%;
+  height: 74%;
+}
+
+#about-me .fa-instagram {
+  font-size: 3.24vh;
+  color: #ffffff;
+}
+
+#about-me #instagram {
+  margin: 0;
+  color: #ffffff;
+  font-size: 6.22vw;
+}
+
+@media (max-width: 800px) {
+  #about-me #instagram {
+    font-size: 10.22vw;
+  }
+}
+
+#about-me #instagram-rect {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+  width: 32.92%;
+  height: 16.42vw;
+  left: 8.91%;
+  bottom: 4.85%;
+}
+
+#about-me #instagram-rect:hover {
+  -webkit-animation: wiggle 160ms;
+          animation: wiggle 160ms;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+@media (max-width: 800px) {
+  #about-me #instagram-rect {
+    width: 56.4vw;
+    height: 10.42vh;
+  }
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-4px, 0);
+            transform: translate(-4px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+  50% {
+    -webkit-transform: translate(-4px, 0);
+            transform: translate(-4px, 0);
+  }
+  100% {
+    -webkit-transform: translate(2px, 0);
+            transform: translate(2px, 0);
+  }
+}
+
+#projects {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects #projects-header {
+  margin: 0;
+  position: absolute;
+  top: 4.05%;
+  left: 4.74%;
+}
+
+@media (max-width: 800px) {
+  #projects #projects-header {
+    top: 9.05vh;
+  }
+}
+
+#projects #projects-rect {
+  position: absolute;
+  top: 17%;
+  left: 2.45%;
+  width: 93.33%;
+  height: 74%;
+  z-index: -1;
+  background-color: #6dc5f8;
+}
+
+#projects #projects-div {
+  width: 79.01%;
+  height: 38.94%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#projects .project-tile {
+  display: inline-block;
+  margin: 1.04%;
+  width: 18.7vw;
+  height: 36.44vh;
+}
+
+#projects #project-box1 {
+  background-image: url(https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/wiki.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#projects #project-box2 {
+  background-image: url(https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/random-quote-machine.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#projects #project-box3 {
+  background-image: url(https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/*# sourceMappingURL=main.css.map */
